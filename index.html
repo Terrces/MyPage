@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Ivan Kharin - Indie Game Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="style.css">
+    <script type="importmap">
+    {
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+    }
+    </script>
+</head>
+<body>
+    <div class="three" style="position: absolute; display: flex; height: 100%; width: 100%; z-index:-1;"></div>
+    <div class="title">
+        <h1>Portfolio</h1>
+        <label>
+            Links: 
+            <a href="https://tercs.itch.io/" target="_blank"><img src="Files/socials/itch-io-svgrepo-com.svg" alt="Itch.io"></a>
+            <a href="https://github.com/Terrces" target="_blank"><img src="Files/socials/github-142-svgrepo-com.svg" alt="github"></a>
+            <a href="https://x.com/terrces" target="_blank"><img src="Files/socials/logo-white.png" style="margin:0px;" alt="x.com"></a>
+            <a href="https://bsky.app/profile/tercs.bsky.social" target="_blank"><img src="Files/socials/Bluesky_Logo.svg" style="margin:0px;" alt="Bluesky"></a>
+            <a href="https://vk.com/terrcs" target="_blank">vk</a>
+        </label>
+    </div>
+    
+    <div style="justify-items: center; justify-content: center; align-items: center; ">
+        <div class="AboutMe" >
+            <h2 style="text-align: center;">About me</h2>
+            <label>
+                ----
+            </label>
+        </div>
+        <h2 style="text-align: center;">My Games</h2>
+        <div class="MyGames" id="games" style="text-align: center;"></div>
+        <div style="justify-content: center; justify-items: center; margin-top:4px;">
+            <iframe class="Player" width="512" height="0" src="" frame-border="0" allowfullscreen allow-pointer-lock allow-scripts></iframe>
+        </div>
+        <div style="justify-content: center; justify-items: center; margin-top:4px;">
+            <button class="ClosePlayer" type="button">^</button>
+        </div>
+
+    </div>
+</body>
+<script src="modules/utils/card.js" type="module"></script>
+<script src="modules/three/maxwell.js" type="module"></script>
+<script>
+    const ClosePlayer = document.querySelector(".ClosePlayer");
+    const Player = document.querySelector(".Player");
+    ClosePlayer.addEventListener("click", () =>{
+        Player.src = ""
+        Player.height = "0"
+    })
+</script>

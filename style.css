@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+::-webkit-scrollbar{
+    width: 5px;
+    height: 4px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+* {
+    margin:0;
+}
+html{
+    background-color: black;
+    background-image: url('Files/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+body
+{    
+    height:100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    transition: 0.2s ease-in-out;
+    /* overflow: hidden; */
+}
+a
+{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    border-bottom: 1px solid white;
+    padding:2px;
+    transition:0.2s ease-in-out;
+    &:hover{
+        border-bottom: 3px solid rgb(255, 107, 81);
+        filter:saturate(150%);
+        border-radius:4px;
+        padding-bottom: 4px;
+    }
+}
+iframe{
+    border:0px solid transparent;
+}
+a img{
+    height:16px;
+    color:white;
+    transition:0.2s ease-in-out;
+    &:hover{
+        height:32px;
+    }
+}
+
+h2
+{
+    padding-top: 16px;
+    padding-bottom: 32px;
+    font-family: "Montserrat", sans-serif;
+}
+.title
+{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    width:100%;
+    justify-items: center;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 32px;
+    border-bottom: 4px  solid white;
+    backdrop-filter: blur(4px);
+}
+.AboutMe{
+    text-align: center;
+    width:40%;
+    padding-bottom: 32px;
+    border-bottom:2px solid white;
+}
+.MyGames{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: hidden;
+    gap: 16px;
+    width:100%;
+    min-height:34em;
+    padding-bottom: 32px;
+    border-bottom:4px solid white;
+    overflow-x: auto;
+    transition: 0.2s ease-in-out;
+    &::-webkit-scrollbar{
+    width: 5px;
+    height: 4px;
+    background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-top-right-radius: 16px;
+        background: rgb(255, 107, 81);
+    }
+}
+.MyGames a{
+    margin:4px;
+}
+.Description h3{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    max-width:15em;
+    margin:4px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid white;
+}
+.Description h5{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    max-width:15em;
+    margin:16px;
+}
+.Game-Card{
+    display: flex;
+    flex-direction: column;
+    padding:16px;
+    border: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+    cursor:crosshair;
+    &:hover
+    {
+        box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.200);
+        backdrop-filter: blur(4px) opacity(80%);
+        border: 2px solid white;
+        border-radius:8px;
+    }
+}
+.Game-Card .cover{
+    transition: 0.5s ease-in-out;
+}
+.Game-Card img{
+    transition: 0.5s ease-in-out;
+}
+.Game-Card .Description{
+    text-align: left;
+    transition: 0.5s ease-in-out;
+}
