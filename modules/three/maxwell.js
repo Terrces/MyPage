@@ -42,7 +42,7 @@ const materials = [
 
 const object = await loader.loadAsync( 'models/Maxwell.fbx' );
 
-object.position.x = 8.5;
+object.position.x = 8;
 object.position.y = -4.8;
 object.position.z = -14;
 object.scale.set(0.001, 0.001, 0.001);
