@@ -5,7 +5,7 @@
         "description":"The first game created using the Godot game engine. The project's goal was to test my skills in 2D game development. During the process, I received feedback and addressed several issues, which allowed me to improve the quality of subsequent projects.",
         "links": {
             "itch":"https://tercs.itch.io/bloom-for-you",
-            "player":"../../Games/BloomForYou/index.html",
+            "pages":"",
             "repo":""
         }
     },
@@ -15,7 +15,7 @@
         "description":"The game was developed with a focus on arcade-style gameplay and replayability. During the development process, skills in time management under tight deadlines were acquired.",
         "links": {
             "itch":"https://tercs.itch.io/body-birds-drop",
-            "player":"../../Games/BodyBirdsDrop/index.html",
+            "pages":"",
             "repo":"https://github.com/Terrces/BodyBirdsDrop"
         }
     },
@@ -25,7 +25,7 @@
         "description":"The goal of developing the game was to create a complete project in 3 days with a focus on utilizing the game engine's physics. Feedback was received from players and streamers during the process.",
         "links": {
             "itch":"https://tercs.itch.io/bunker",
-            "player":"../../Games/Bunker/index.html",
+            "pages":"",
             "repo":""
         }
     },
@@ -35,7 +35,7 @@
         "description":"An experimental game using custom shaders, part of the game logic was implemented at the shader level.",
         "links": {
             "itch":"https://tercs.itch.io/colorslab",
-            "player":"../../Games/ColorsLab/index.html",
+            "pages":"",
             "repo":"https://github.com/Terrces/ColorsLab"
         }
     },
@@ -45,7 +45,7 @@
         "description":"The first game was made and completed using the Unity game engine. It's a simple arcade game with a level system and delivery.",
         "links": {
             "itch":"https://tercs.itch.io/delivery-express",
-            "player":"../../Games/DeliveryExpress/index.html",
+            "pages":"",
             "repo":"https://github.com/Terrces/DeliveryExpress"
         }
     }

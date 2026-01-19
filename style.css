@@ -47,9 +47,6 @@ a
         padding-bottom: 4px;
     }
 }
-iframe{
-    border:0px solid transparent;
-}
 a img{
     height:16px;
     color:white;
@@ -128,6 +125,8 @@ h2
 .Game-Card{
     display: flex;
     flex-direction: column;
+    min-height:1em;
+    min-width:16em;
     padding:16px;
     border: 2px solid transparent;
     transition: 0.2s ease-in-out;

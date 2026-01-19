@@ -5,22 +5,6 @@ const jsonObject = parsedjson
 const container = document.getElementById("games");
 const descriptionNotFocused = "40%"
 
-function playLink(data, text){
-    const element = document.createElement("a");
-    const player = document.querySelector(".Player");
-
-    if (data != ""){
-        // element.href = data;
-        element.target = "_blank";
-        element.textContent = text;
-        element.addEventListener("click", () => {player.src = data;Player.height = "512"})
-        return element;
-    }
-    else{
-        return "";
-    }
-}
-
 function createLink(data, text)
 {
     const element = document.createElement("a");
@@ -56,9 +40,9 @@ function createCard(gameData) {
     cardName.textContent = gameData.title;
     cardDescription.textContent = gameData.description;
 
-    // playLink(gameData.links.player,"Play"),
     linksContainer.append(
         createLink(gameData.links.itch,"Itch.io"),
+        createLink(gameData.links.pages,"Pages"),
         createLink(gameData.links.repo,"Repo"))
     descriptionContainer.append(cardName, cardDescription, linksContainer);
     coverContainer.appendChild(cover);
@@ -66,7 +50,6 @@ function createCard(gameData) {
     container.appendChild(subContainer);
     
     cardLinksShow(linksContainer,false)
-    cardMarginAnimations(cover,"-8px 0px 0px -8px")
     cardMarginAnimations(coverContainer,"0px 0px 32px 0px")
     cardMarginAnimations(descriptionContainer,"0px -32px 0px 32px")
     cardDescription.style.transition = "0.2s ease-in-out"
@@ -80,7 +63,6 @@ function createCard(gameData) {
         cardDescription.style.borderLeft = "2px solid white"
         cardDescription.style.paddingLeft = "8px"
         cardLinksShow(linksContainer, true);
-        cardMarginAnimations(cover,"0px")
         cardMarginAnimations(coverContainer,"0px")
         cardMarginAnimations(descriptionContainer, "0px 0px 8px 0px")
     })
@@ -90,7 +72,6 @@ function createCard(gameData) {
         descriptionContainer.style.opacity = descriptionNotFocused;
         cardDescription.style.paddingLeft = "0px"
         cardDescription.style.borderLeft = "2px solid transparent"
-        cardMarginAnimations(cover,"-8px 0px 0px -8px")
         cardMarginAnimations(coverContainer,"0px 0px 32px 0px")
         cardMarginAnimations(descriptionContainer,"0px -32px 0px 32px")
     })
