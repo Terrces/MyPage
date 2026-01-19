@@ -56,8 +56,8 @@ function createCard(gameData) {
     cardName.textContent = gameData.title;
     cardDescription.textContent = gameData.description;
 
+    // playLink(gameData.links.player,"Play"),
     linksContainer.append(
-        playLink(gameData.links.player,"Play"),
         createLink(gameData.links.itch,"Itch.io"),
         createLink(gameData.links.repo,"Repo"))
     descriptionContainer.append(cardName, cardDescription, linksContainer);
