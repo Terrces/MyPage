@@ -27,7 +27,6 @@ body
     font-family: "Roboto", sans-serif;
     color: white;
     transition: 0.2s ease-in-out;
-    /* overflow: hidden; */
 }
 a
 {
@@ -41,7 +40,7 @@ a
     padding:2px;
     transition:0.2s ease-in-out;
     &:hover{
-        border-bottom: 3px solid rgb(255, 107, 81);
+        border-bottom: 3px solid rgb(255, 255, 255);
         filter:saturate(150%);
         border-radius:4px;
         padding-bottom: 4px;
@@ -76,7 +75,10 @@ h2
 }
 .AboutMe{
     text-align: center;
-    width:40%;
+    background-color:rgba(0, 0, 0, 0.200);
+    backdrop-filter: blur(16px);
+    justify-items: center;
+    justify-content: center;
     padding-bottom: 32px;
     border-bottom:2px solid white;
 }
@@ -100,7 +102,7 @@ h2
     }
     &::-webkit-scrollbar-thumb {
         border-top-right-radius: 16px;
-        background: rgb(255, 107, 81);
+        background: rgb(255, 255, 255);
     }
 }
 .MyGames a{
@@ -129,11 +131,12 @@ h2
     min-width:16em;
     padding:16px;
     border: 2px solid transparent;
-    transition: 0.2s ease-in-out;
     cursor:crosshair;
+    transition: 0.2s ease-in-out;
     &:hover
     {
         box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.200);
+        background-color:rgba(0, 0, 0, 0.200);
         backdrop-filter: blur(4px) opacity(80%);
         border: 2px solid white;
         border-radius:8px;
