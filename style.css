@@ -74,14 +74,17 @@ h2
     backdrop-filter: blur(4px);
 }
 .AboutMe{
+    display: flex;
     text-align: center;
-    background-color:rgba(0, 0, 0, 0.200);
+    background-color:rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(16px);
     justify-items: center;
     justify-content: center;
     padding-bottom: 32px;
     border-bottom:2px solid white;
+    transition: 0.2s ease-in-out;
 }
+
 .MyGames{
     display: flex;
     flex-direction: row;
@@ -109,20 +112,31 @@ h2
     margin:4px;
 }
 .Game-Card{
+    cursor:crosshair;
+    
     display: flex;
+    
     flex-direction: column;
+    
     min-height:1em;
     min-width:16em;
     padding:16px;
-    border: 2px solid transparent;
-    cursor:crosshair;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.4) 4%, transparent 60%);
+    
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-bottom-right-radius: 26px;
+    border-top-left-radius: 24px;
+
+    backdrop-filter: blur(1px);
     transition: 0.2s ease-in-out;
+
     &:hover
     {
-        box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.200);
-        background-color:rgba(0, 0, 0, 0.200);
-        backdrop-filter: blur(4px) opacity(80%);
+        background: linear-gradient(225deg, rgba(255, 255, 255, 0.4) 20%, transparent 60%);
         border: 2px solid white;
+        backdrop-filter: blur(4px) opacity(80%);
+        box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.2);
+        background-color:rgba(0, 0, 0, 0.2);
         border-radius:8px;
     }
 }

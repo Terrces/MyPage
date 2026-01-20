@@ -41,6 +41,6 @@ export function cardLostFocus(coverContainer, linksContainer, descriptionContain
     cardDescription.style.borderLeft = "2px solid transparent"
     coverContainer.style.filter = "brightness(80%)"
     cardLinksShow(linksContainer, false);
-    cardMarginAnimations(coverContainer,"0px 0px 32px 0px")
-    cardMarginAnimations(descriptionContainer,"0px -32px 0px 32px")
+    cardMarginAnimations(coverContainer,"0px 0px 8px 0px")
+    cardMarginAnimations(descriptionContainer,"0px 32px 0px 32px")
 }

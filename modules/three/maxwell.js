@@ -10,7 +10,7 @@ const modelAnimationsAmplitude = 0.02;
 const animationsSpeed = 4;
 
 const fov = 45;
-const aspect = width / height;
+const aspect = 2;
 const near = 0.1;
 const far = 100;
 
@@ -22,11 +22,13 @@ const loader = new FBXLoader();
 const light = new THREE.AmbientLight( new THREE.Color("rgb(255, 255, 255)") );
 const directionalLight = new THREE.DirectionalLight( new THREE.Color("rgb(255, 255, 255)"), 2 );
 
-window.addEventListener("resize", () =>{
-    width = container.clientWidth || window.innerWidth;
-    height = container.clientHeight || window.innerHeight;
+function windowResized(){
+    width = container.clientWidth || container.innerWidth;
+    height = container.clientHeight || container.innerHeight;
     renderer.setSize(width, height);
-})
+}
+
+window.addEventListener("resize", () => windowResized())
 
 function loadTexture(path){
     let textureloader = new THREE.TextureLoader();
@@ -45,9 +47,8 @@ const maxwellMaterials = [
     new THREE.MeshStandardMaterial({color:new THREE.Color("rgb(255,255,255)"), map:loadTexture('Files/dingus_nowhiskers.jpg'),fog:true}),
     new THREE.MeshStandardMaterial({color:new THREE.Color("rgb(255,255,255)"), map:loadTexture('Files/dingus_whiskers.tga.png'),fog:true}),
 ]
-
 maxwellObject.position.x = 8;
-maxwellObject.position.y = -4.8;
+maxwellObject.position.y = -4.5;
 maxwellObject.position.z = -14;
 maxwellObject.scale.set(0.001, 0.001, 0.001);
 maxwellObject.traverse((child) => {
