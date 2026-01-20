@@ -32,7 +32,7 @@ export function cardFocused(coverContainer, linksContainer, descriptionContainer
     cardDescription.style.paddingLeft = "8px"
     coverContainer.style.filter = "brightness(105%)"
     cardLinksShow(linksContainer, true);
-    cardMarginAnimations(coverContainer,"0px")
+    cardMarginAnimations(coverContainer,"0px 0px 16px 0px")
     cardMarginAnimations(descriptionContainer, "0px 0px 8px 0px")
 }
 export function cardLostFocus(coverContainer, linksContainer, descriptionContainer, cardDescription){
