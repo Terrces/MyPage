@@ -1,4 +1,3 @@
-const descriptionNotFocused = "40%"
 
 async function cardMarginAnimations(_element, margin){ _element.style.margin = await margin; }
 
@@ -33,14 +32,13 @@ export function cardFocused(coverContainer, linksContainer, descriptionContainer
     coverContainer.style.filter = "brightness(105%)"
     cardLinksShow(linksContainer, true);
     cardMarginAnimations(coverContainer,"0px 0px 16px 0px")
-    cardMarginAnimations(descriptionContainer, "0px 0px 8px 0px")
+    cardMarginAnimations(descriptionContainer, "0px")
 }
 export function cardLostFocus(coverContainer, linksContainer, descriptionContainer, cardDescription){
-    descriptionContainer.style.opacity = descriptionNotFocused;
     cardDescription.style.paddingLeft = "0px"
     cardDescription.style.borderLeft = "2px solid transparent"
-    coverContainer.style.filter = "brightness(80%)"
+    coverContainer.style.filter = "brightness(50%)"
     cardLinksShow(linksContainer, false);
     cardMarginAnimations(coverContainer,"0px 0px 8px 0px")
-    cardMarginAnimations(descriptionContainer,"0px 32px 0px 32px")
+    cardMarginAnimations(descriptionContainer,"0px 0px 0px 32px")
 }
