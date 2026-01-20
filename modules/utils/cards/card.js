@@ -28,6 +28,7 @@ function createCard(gameData) {
 
     linksContainer.append(
         createLink(gameData.links.itch,"Itch.io"),
+        createLink(gameData.links.newgrounds,"NewGrounds"),
         createLink(gameData.links.pages,"Pages"),
         createLink(gameData.links.repo,"Github"));
     descriptionContainer.append(cardName, cardDescription, linksContainer);

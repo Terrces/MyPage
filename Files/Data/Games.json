@@ -6,6 +6,7 @@
         "links": {
             "itch":"https://tercs.itch.io/bloom-for-you",
             "pages":"",
+            "newgrounds":"",
             "repo":""
         }
     },
@@ -16,6 +17,7 @@
         "links": {
             "itch":"https://tercs.itch.io/body-birds-drop",
             "pages":"",
+            "newgrounds":"https://www.newgrounds.com/portal/view/1000973",
             "repo":"https://github.com/Terrces/BodyBirdsDrop"
         }
     },
@@ -26,6 +28,7 @@
         "links": {
             "itch":"https://tercs.itch.io/bunker",
             "pages":"",
+            "newgrounds":"",
             "repo":""
         }
     },
@@ -36,6 +39,7 @@
         "links": {
             "itch":"https://tercs.itch.io/colorslab",
             "pages":"",
+            "newgrounds":"",
             "repo":"https://github.com/Terrces/ColorsLab"
         }
     },
@@ -46,6 +50,7 @@
         "links": {
             "itch":"https://tercs.itch.io/delivery-express",
             "pages":"",
+            "newgrounds":"",
             "repo":"https://github.com/Terrces/DeliveryExpress"
         }
     }
