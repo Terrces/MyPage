@@ -7,13 +7,13 @@
     {
     "imports": {
         "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
-    }
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" }
     }
     </script>
 </head>
 <body>
     <div class="three" style="position: absolute; display: flex; height: 100%; width: 100%; z-index:-1;"></div>
+    
     <div class="title">
         <h1>Portfolio</h1>
         <label>
@@ -35,22 +35,7 @@
         </div>
         <h2 style="text-align: center;">My Games</h2>
         <div class="MyGames" id="games" style="text-align: center;"></div>
-        <!-- <div style="justify-content: center; justify-items: center; margin-top:4px;">
-            <iframe class="Player" width="512" height="0" src="" frame-border="0" allowfullscreen allow-pointer-lock allow-scripts></iframe>
-        </div>
-        <div style="justify-content: center; justify-items: center; margin-top:4px;">
-            <button class="ClosePlayer" type="button">^</button>
-        </div> -->
-
     </div>
 </body>
-<script src="modules/utils/card.js" type="module"></script>
+<script src="modules/utils/cards/card.js" type="module"></script>
 <script src="modules/three/maxwell.js" type="module"></script>
-<!-- <script>
-    const ClosePlayer = document.querySelector(".ClosePlayer");
-    const Player = document.querySelector(".Player");
-    ClosePlayer.addEventListener("click", () =>{
-        Player.src = ""
-        Player.height = "0"
-    })
-</script> -->
