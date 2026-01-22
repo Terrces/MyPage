@@ -54,9 +54,12 @@ a img{
         height:32px;
     }
 }
-
+h1{
+    text-shadow:0px 0px 32px black;
+}
 h2
 {
+    text-shadow:0px 0px 21px black;
     padding-top: 16px;
     padding-bottom: 32px;
     font-family: "Montserrat", sans-serif;
@@ -82,6 +85,115 @@ h2
     justify-content: center;
     padding-bottom: 32px;
     border-bottom:2px solid white;
+    transition: 0.2s ease-in-out;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: hidden;
+    gap: 16px;
+    width:100%;
+    min-height:34em;
+    transition: 0.2s ease-in-out;
+}
+
+.skills .category{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding:16px;
+    min-height:34em;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter:blur(4px);
+
+    border-bottom-left-radius: 26px;
+    border-top-right-radius: 24px;
+
+    position: relative;
+    overflow: hidden;
+    
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s ease-in-out;
+    transition: border-radius 0.3s ease-in-out;
+    cursor: none;
+
+    &:hover{
+        background-color:rgba(0, 0, 0, 0.75);
+        border:2px solid white;
+        border-radius:4px;
+        border-bottom-right-radius: 26px;
+        border-top-left-radius: 24px;
+    }
+
+}
+
+.category h2{
+    text-shadow:0px 0px 0px white;
+}
+.category:hover h2{
+    text-shadow:0px 0px 4px white;
+}
+
+.category::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    background: radial-gradient(
+        180px circle at var(--x, 50%) var(--y, 50%),
+        rgba(255, 255, 255, 0.55) 5%,
+        rgba(220, 220, 255, 0.18) 40%,
+        transparent 75%
+    );
+}
+
+.category:hover::before {
+    opacity: 1;
+}
+
+.skillCard {
+    max-height:128px;
+    width: 320px;
+    margin: 1em;
+    padding: 16px;
+    padding-bottom:32px;
+    border: 2px solid white;
+    position: relative;
+    overflow: hidden;
+    
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.1) 4%, transparent 60%);
+    
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-bottom-left-radius: 26px;
+    border-top-right-radius: 24px;
+
+    backdrop-filter: blur(1px);
+    transition: 0.2s ease-in-out;
+
+    &:hover
+    {
+        background: linear-gradient(225deg, rgba(255, 255, 255, 0.2) 10%, transparent 70%);
+        border: 2px solid white;
+        backdrop-filter: blur(4px) opacity(80%);
+        box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.2);
+        background-color:rgba(0, 0, 0, 0.2);
+        border-radius:4px;
+        border-bottom-right-radius: 26px;
+        border-top-left-radius: 24px;
+        filter: opacity(100%);
+    }
+}
+
+.skillCard label{
+    cursor: none;
+
     transition: 0.2s ease-in-out;
 }
 

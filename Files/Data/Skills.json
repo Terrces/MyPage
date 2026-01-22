@@ -1,0 +1,121 @@
+{
+    "categories": [
+        {
+            "name": "Frontend",
+            "skills": [
+                {
+                    "name": "HTML",
+                    "description": "Semantic HTML5 markup, accessibility best practices, and modern document structure."
+                },
+                {
+                    "name": "CSS",
+                    "description": "Responsive layouts with Flexbox, Grid, mobile-first approach. Experience with preprocessors (SASS/SCSS) and CSS-in-JS solutions."
+                },
+                {
+                    "name": "JavaScript",
+                    "description": "Modern ES6+, DOM manipulation, asynchronous programming (Promises, async/await), event handling, and modular code organization."
+                },
+                {
+                    "name": "TypeScript",
+                    "description": "Static typing in JavaScript projects, interfaces, generics, improved developer experience and maintainability in large codebases."
+                },
+                {
+                    "name": "Three.js",
+                    "description": "Creating interactive 3D experiences in the browser using WebGL. Scenes, cameras, lights, materials, meshes, animations, post-processing, raycasting, and performance optimization for web."
+                }
+            ]
+        },
+        {
+            "name": "Backend & Scripting",
+            "skills": [
+                {
+                    "name": "C#",
+                    "description": "Object-oriented programming, LINQ, async/await patterns, .NET ecosystem (Core / Framework)."
+                },
+                {
+                    "name": "Python",
+                    "description": "Clean, readable code. Experience with scripting, automation, data processing, and simple web backends (Flask/FastAPI)."
+                },
+                {
+                    "name": "GDscript",
+                    "description": "Godot's Python-like scripting language for gameplay mechanics, signals, nodes, and scene management."
+                },
+                {
+                    "name": "Lua",
+                    "description": "Lightweight scripting for game logic, mods, embedded systems, and performance-sensitive code."
+                }
+            ]
+        },
+        {
+            "name": "Game Engines",
+            "skills": [
+                {
+                    "name": "Unity",
+                    "description": "2D/3D game development, C# scripting, UI systems (uGUI), Shader Graph, Addressables, physics, particle systems, and optimization."
+                },
+                {
+                    "name": "Godot",
+                    "description": "Node-based architecture, GDScript/C#, 2D/3D pipelines, built-in editor tools, export templates, and lightweight game creation."
+                },
+                {
+                    "name": "Construct",
+                    "description": "Event-sheet visual programming, rapid 2D prototyping, behaviors, effects, and browser/HTML5 game deployment."
+                },
+                {
+                    "name": "GameMaker",
+                    "description": "Drag-and-drop + GML scripting, 2D-focused development, room editor, sprite animation, and cross-platform exports."
+                }
+            ]
+        },
+        {
+            "name": "Desktop & UI Frameworks",
+            "skills": [
+                {
+                    "name": "WPF",
+                    "description": "Modern Windows desktop applications with XAML-based UI, MVVM pattern, data binding, and custom controls."
+                },
+                {
+                    "name": "WinForms",
+                    "description": "Classic .NET Windows desktop applications, rapid UI prototyping, event-driven programming."
+                },
+                {
+                    "name": "XAML",
+                    "description": "Declarative UI language for WPF, UWP, MAUI, and Xamarin.Forms — layouts, styles, templates, and data binding."
+                },
+                {
+                    "name": "Electron",
+                    "description": "Cross-platform desktop apps using web technologies (HTML, CSS, JavaScript), integration with Node.js ecosystem."
+                }
+            ]
+        },
+        {
+            "name": "Tools & Design",
+            "skills": [
+                {
+                    "name": "Photoshop",
+                    "description": "UI/UX mockups, sprite sheets, texture creation, photo editing, and asset preparation for games."
+                },
+                {
+                    "name": "Krita",
+                    "description": "Digital painting, concept art, illustration, animation, and open-source alternative to Photoshop for 2D art."
+                },
+                {
+                    "name": "Aseprite",
+                    "description": "Pixel art creation, animation, spritesheets, palette management, and retro-style game asset production."
+                },
+                {
+                    "name": "Blender",
+                    "description": "3D modeling, texturing, rigging, animation, sculpting, rendering, and low-poly game asset creation."
+                },
+                {
+                    "name": "Blockbench",
+                    "description": "Low-poly 3D modeling, texturing, and animation specifically for voxel-style games and Minecraft mods."
+                },
+                {
+                    "name": "Git / GitHub",
+                    "description": "Version control, branching strategies, pull requests, collaborative workflows, and repository management."
+                }
+            ]
+        }
+    ]
+}
