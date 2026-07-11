@@ -1,8 +1,7 @@
 import {cardFocused, cardLostFocus, createLink} from "../cardVisual.js"
 
 const Fetchjson = await fetch("./Files/Data/Games.json")
-const parsedjson = await Fetchjson.json();
-const jsonObject = parsedjson
+const jsonObject = await Fetchjson.json();
 
 const container = document.getElementById("games");
 

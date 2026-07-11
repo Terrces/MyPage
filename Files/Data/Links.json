@@ -1,0 +1,22 @@
+{
+    "itch":{
+        "name": "itch.io",
+        "img": "/Files/socials/itch-io.svg",
+        "url": "https://tercs.itch.io/"
+    },
+    "github":{
+        "name": "github",
+        "img": "/Files/socials/Github.svg",
+        "url": "https://github.com/Terrces"
+    },
+    "x.com":{
+        "name": "x.com",
+        "img": "Files/socials/x.png",
+        "url": "https://x.com/terrces"
+    },
+    "bsky":{
+        "name": "bsky",
+        "img": "/Files/socials/Bluesky.svg",
+        "url": "https://bsky.app/profile/tercs.bsky.social"
+    }
+}

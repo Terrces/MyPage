@@ -19,14 +19,10 @@
     <div class="three" style="position: absolute; display: flex; height: 100%; width: 100%; z-index:-1;"></div>
     <div class="title">
         <h1>Portfolio</h1>
-        <label>
-            Links: 
-            <a href="https://tercs.itch.io/" target="_blank"><img src="Files/socials/itch-io-svgrepo-com.svg" alt="Itch.io"></a>
-            <a href="https://github.com/Terrces" target="_blank"><img src="Files/socials/github-142-svgrepo-com.svg" alt="github"></a>
-            <a href="https://x.com/terrces" target="_blank"><img src="Files/socials/logo-white.png" style="margin:0px;" alt="x.com"></a>
-            <a href="https://bsky.app/profile/tercs.bsky.social" target="_blank"><img src="Files/socials/Bluesky_Logo.svg" style="margin:0px;" alt="Bluesky"></a>
-            <a href="https://vk.com/terrcs" target="_blank">vk</a>
-        </label>
+        <div class="links">
+            <h3>Links</h3>
+            <div class="LinksContainer"></div>
+        </div>
     </div>
     
     <div style="justify-items: center; justify-content: center;">
@@ -46,11 +42,8 @@
         <div class="MyGames" id="games" style="text-align: center;"></div>
         <h2 style="text-align: center;">Skills</h2>
         <div class="skills"></div>
-    </div>
 </body>
-<script>
-
-</script>
+<script src="modules/utils/links.js" type="module"></script>
 <script src="modules/utils/cards/skillCards/skillCard.js" type="module"></script>
 <script src="modules/utils/cards/gameCards/gameCard.js" type="module"></script>
 <script src="modules/three/maxwell.js" type="module"></script>
