@@ -12,7 +12,7 @@ function createButtons(element){
     const mouseEnteredPosition = "0.3em"
     const backgroundSizeDefault = "1.8em"
     const backgroundSizeHovered = "1.5em"
-    const hoveredRadius = "0.5em"
+    const hoveredRadius = "0.3em"
 
     button.style.margin = "0.2em"
     button.style.cursor = "pointer"

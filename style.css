@@ -46,6 +46,30 @@ a
         padding-bottom: 4px;
     }
 }
+button{
+    font-size: large;
+    
+    color:white;
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    padding:8px;
+    
+    border:none;
+    border-bottom:4px solid white;
+    cursor: pointer;
+    transition:0.2s ease-in-out;
+}
+
+button:hover{
+    font-size: larger;
+    color:rgb(228, 228, 228);
+    /* padding:12px; */
+    border-left:4px solid #dee1ff;
+    border-right:4px solid #dee1ff;
+    border-bottom:0px solid rgb(255, 255, 255);
+    backdrop-filter: blur(4px);
+}
+
 a img{
     height:16px;
     color:white;
@@ -103,6 +127,7 @@ h2
     justify-content: center;
     overflow-x: hidden;
     gap: 16px;
+    margin-bottom:6.2em;
     width:100%;
     min-height:34em;
     transition: 0.2s ease-in-out;
