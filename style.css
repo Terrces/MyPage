@@ -80,7 +80,7 @@ h2
     justify-items: center;
     text-align: center;
     padding-top: 16px;
-    padding-bottom: 32px;
+    padding-bottom: 16px;
     border-bottom: 4px  solid white;
     backdrop-filter: blur(4px);
 }
