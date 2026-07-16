@@ -23,8 +23,8 @@ const light = new THREE.AmbientLight( new THREE.Color("rgb(255, 255, 255)") );
 const directionalLight = new THREE.DirectionalLight( new THREE.Color("rgb(255, 255, 255)"), 2 );
 
 function windowResized(){
-    width = container.clientWidth || container.innerWidth;
-    height = container.clientHeight || container.innerHeight;
+    width = container.clientWidth || window.innerWidth;
+    height = container.clientHeight || window.innerHeight;
     renderer.setSize(width, height);
 }
 
@@ -48,7 +48,7 @@ const maxwellMaterials = [
     new THREE.MeshStandardMaterial({color:new THREE.Color("rgb(255,255,255)"), map:loadTexture('Files/dingus_whiskers.tga.png'),fog:true}),
 ]
 maxwellObject.position.x = 8;
-maxwellObject.position.y = -4.5;
+maxwellObject.position.y = -2.5;
 maxwellObject.position.z = -14;
 maxwellObject.scale.set(0.001, 0.001, 0.001);
 maxwellObject.traverse((child) => {
