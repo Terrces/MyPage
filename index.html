@@ -15,18 +15,23 @@
     </script>
 </head>
 <body>
-    
-    <div class="three" style="position: absolute; display: flex; height: 100%; width: 100%; z-index:-1;"></div>
-    <div class="title" style="position: sticky; top:0px; z-index:15;">
-        <h1>Portfolio</h1>
-        <div class="LinksContainer">
+    <div class="background"><div class="three"></div></div>
+    <div class="title">
+        <div class="LinksContainer" style="flex: 1; text-align: left; margin-left:2em; display: flex; align-items: center;">
             <h3>Links</h3>
+        </div>
+        <h1 style="flex: 1;">Portfolio</h1>
+        <div class="resumeButton">
+            <button 
+            style="border-radius:8px; flex: 1; text-align: right; margin-right:2em;" 
+            type="button" onclick="location.href='Files/resume.pdf'">
+            <b>Resume</b></button>
         </div>
     </div>
     
     <div style="justify-items: center; justify-content: center;">
         <div class="AboutMe">
-            <div style="width:40%;" >
+            <div style="width:80%;" >
                 <h2 style="text-align: center;">About me</h2>
                 <label style="font-size:1.3em;">
                     Beginner developer in Unity and Godot, hackathon enthusiast and rapid prototyping lover.
@@ -35,7 +40,6 @@
                     Actively experimenting with new technologies, participating in hackathons and open to growth both in game projects (indie and beyond) as well as in desktop applications, utilities and other useful solutions.
                 </label>
                 <br>
-                <button style="border-radius:8px; margin-top:0.8em;" type="button" onclick="location.href='Files/resume.pdf'"><b>download resume</b></button>
             </div>
         </div>
 

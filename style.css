@@ -96,18 +96,56 @@ h2
     padding-bottom: 32px;
     font-family: "Montserrat", sans-serif;
 }
-.title
-{
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    width:100%;
-    justify-items: center;
-    text-align: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    border-bottom: 4px  solid white;
-    backdrop-filter: blur(4px);
+@media(max-width:715px){
+    .title
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* align-items: center; */
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        width:100%;
+        top:0px; 
+        position: sticky; 
+        z-index:15; 
+        padding:8px;
+        border-bottom: 4px  solid white;
+        backdrop-filter: blur(4px);
+    }
+    .title .LinksContainer{
+        position: absolute;
+        opacity:0;
+    }
+    .title .resumeButton{
+        position: absolute;
+        opacity:0;
+    }
 }
+@media(min-width:720px){
+    .title
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        width:100%;
+        top:0px;
+        position: sticky; 
+        z-index:15; 
+        padding:8px;
+        border-bottom: 4px  solid white;
+        backdrop-filter: blur(4px);
+    }
+    .title h1{
+         text-align: center;
+         transform: translateX(-45%);
+    }
+}
+
 .AboutMe{
     display: flex;
     text-align: center;
@@ -310,4 +348,17 @@ h2
     max-width:15em;
     margin:16px;
     transition: 0.5s ease-in-out;
+}
+.background {
+    position: sticky;
+    top:0px;
+    height:100%;
+    display: flex;
+    z-index:-1;
+}
+.three {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
 }

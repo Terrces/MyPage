@@ -9,8 +9,8 @@ for (const link in jsonObject){
 
 function createButtons(element){
     let button = document.createElement("button")
-    const mouseEnteredPosition = "0.3em"
-    const backgroundSizeDefault = "1.8em"
+    const mouseEnteredPosition = "0em"
+    const backgroundSizeDefault = "1.4em"
     const backgroundSizeHovered = "1.5em"
     const hoveredRadius = "0.3em"
 
@@ -25,13 +25,13 @@ function createButtons(element){
     
     button.style.backgroundImage = `url(${element.img})`
     button.style.backgroundClip = "padding-box"
-    button.style.backgroundSize = "1.8em"
+    button.style.backgroundSize = backgroundSizeDefault
     button.style.backgroundRepeat = "no-repeat"
 
     button.style.backgroundColor = "transparent"
 
-    button.style.minWidth = "2em"
-    button.style.minHeight = "2.4em"
+    button.style.minWidth = "1.5em"
+    button.style.minHeight = "2em"
     
     button.addEventListener("mouseout", () => {
         button.style.backgroundPositionY = "0em"
