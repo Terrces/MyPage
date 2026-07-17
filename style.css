@@ -96,6 +96,36 @@ h2
     padding-bottom: 32px;
     font-family: "Montserrat", sans-serif;
 }
+
+
+.title
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    width:100%;
+    top:0px;
+    position: sticky; 
+    z-index:15; 
+    padding:8px;
+    border-bottom: 4px  solid white;
+    backdrop-filter: blur(4px);
+    box-sizing: border-box;
+}
+.title h1{
+    text-align: center;
+    position:absolute;
+    width:calc(100% - 2%);
+}
+.title .LinksContainer{
+    display:flex;
+    max-width:min-content;
+    z-index:2;
+}
+
 @media(max-width:715px){
     .title
     {
@@ -112,38 +142,25 @@ h2
         padding:8px;
         border-bottom: 4px  solid white;
         backdrop-filter: blur(4px);
+        box-sizing: border-box;
+    }
+    .title h1{
+        text-align: center;
+        position:relative;
+        width:100%;
     }
     .title .LinksContainer{
-        position: absolute;
+        display: none;
+        position:absolute;
         opacity:0;
     }
     .title .resumeButton{
-        position: absolute;
+        display: none;
+        position:absolute;
         opacity:0;
     }
 }
-@media(min-width:720px){
-    .title
-    {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        align-items: center;
-        color: white;
-        font-family: "Montserrat", sans-serif;
-        width:100%;
-        top:0px;
-        position: sticky; 
-        z-index:15; 
-        padding:8px;
-        border-bottom: 4px  solid white;
-        backdrop-filter: blur(4px);
-    }
-    .title h1{
-         text-align: center;
-         transform: translateX(-45%);
-    }
-}
+
 
 .AboutMe{
     display: flex;
